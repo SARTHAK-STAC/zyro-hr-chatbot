@@ -17,7 +17,7 @@ os.environ["GROQ_API_KEY"] = groq_key
 def load_rag():
 
 ```
-loader = PyPDFDirectoryLoader("data")
+loader = PyPDFDirectoryLoader(".")
 documents = loader.load()
 
 splitter = RecursiveCharacterTextSplitter(
